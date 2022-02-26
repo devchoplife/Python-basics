@@ -58,3 +58,24 @@ print(b[2:])
 # Slice from the start
 b = "Hello, World!"
 print(b[-5:-2]) 
+
+# Modfy strings 
+# Upper case 
+a = "hello, World!"
+print(a.upper())
+
+# Lower case 
+a = "hello, World!"
+print(a.lower())
+
+# Remove whitespace 
+a = "hello, World!"
+print(a.strip())
+
+# Replace string 
+a = "hello, World!"
+print(a.replace('H', 'J'))
+
+# Split string 
+a = "hello, World!"
+print(a.split(","))
