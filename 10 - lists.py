@@ -148,3 +148,40 @@ which you can manipulate before it ends up like a list item in the new list:
 newlist = [x.upper() for x in fruits]
 # The expression can also contain conditions, not like a filter, but as a way to manipulate the outcome:
 newlist = [x if x != "banana" else "orange" for x in fruits]
+
+# SORT LISTS
+# Sort lists alphanumerically (ascending by default)
+thislist = ["orange", "mango", "kiwi", "pineapple", "banana"]
+thislist.sort()
+print(thislist)
+
+# Sort descending
+thislist = ["orange", "mango", "kiwi", "pineapple", "banana"]
+thislist.sort(reverse=True)
+print(thislist)
+
+# Customize the sort function e.g.
+
+
+def myfunc(n):
+    return abs(n - 50)
+
+
+thislist = [100, 50, 65, 82, 23]
+thislist.sort(key=myfunc)
+print(thislist)
+
+# Case insensitive sort
+"""
+By default the sort() method is case sensitive, resulting in all capital letters being sorted before lower case letters
+Luckily we can use built-in functions as key functions when sorting a list.
+So if you want a case-insensitive sort function, use str.lower as a key function:
+"""
+thislist = ["banana", "Orange", "Kiwi", "cherry"]
+thislist.sort(key=str.lower)
+print(thislist)
+
+# Reverse order
+thislist = ["banana", "Orange", "Kiwi", "cherry"]
+thislist.reverse()
+print(thislist)
