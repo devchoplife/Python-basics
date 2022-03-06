@@ -90,3 +90,36 @@ print(thisset)
 thisset = {"apple", "banana", "cherry"}
 del thisset
 print(thisset)
+
+# Joining sets
+# Join two sets
+"""
+There are several ways to join two or more sets in Python.
+
+You can use the union() method that returns a new set containing all items from both 
+sets, or the update() method that inserts all the items from one set into another
+"""
+# The union() method returns a new set with all items from both sets
+set1 = {"a", "b", "c"}
+set2 = {1, 2, 3}
+set3 = set1.union(set2)
+print(set3)
+# The update() method inserts the items in set2 into set1
+set1 = {"a", "b", "c"}
+set2 = {1, 2, 3}
+set1.update(set2)
+print(set1)
+
+"""Both union() and update() methods will exclude any duplicate items """
+
+# Keep only the duplicates
+x = {"apple", "banana", "cherry"}
+y = {"google", "microsoft", "apple"}
+x.intersection_update(y)  # this returns a set with the duplicates
+print(x)
+
+# Keep all but not the duplicates
+x = {"apple", "banana", "cherry"}
+y = {"google", "microsoft", "apple"}
+x.symmetric_difference_update(y) # returns a set with elements that are not duplicates 
+print(x)
