@@ -121,5 +121,6 @@ print(x)
 # Keep all but not the duplicates
 x = {"apple", "banana", "cherry"}
 y = {"google", "microsoft", "apple"}
-x.symmetric_difference_update(y) # returns a set with elements that are not duplicates 
+# returns a set with elements that are not duplicates
+x.symmetric_difference_update(y)
 print(x)
