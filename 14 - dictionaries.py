@@ -89,3 +89,49 @@ thisdict = {
     "year": 1964
 }
 thisdict.update({"color": "red"})
+
+# Remove dictionary
+thisdict = {
+    "brand": "Ford",
+    "model": "Mustang",
+    "year": 1964
+}
+thisdict.pop("model")  # removes item with the specified key name
+print(thisdict)
+
+# popitem() removes the last inserted item
+thisdict = {
+    "brand": "Ford",
+    "model": "Mustang",
+    "year": 1964
+}
+thisdict.popitem()
+print(thisdict)
+
+# The del keyword removes the item with the specified key name:
+thisdict = {
+    "brand": "Ford",
+    "model": "Mustang",
+    "year": 1964
+}
+del thisdict["model"]
+print(thisdict)
+
+# The del keyword can also delete the dictionary completely
+thisdict = {
+    "brand": "Ford",
+    "model": "Mustang",
+    "year": 1964
+}
+del thisdict
+# this will cause an error because "thisdict" no longer exists.
+print(thisdict)
+
+# The clear() method empties the dictionary
+thisdict = {
+    "brand": "Ford",
+    "model": "Mustang",
+    "year": 1964
+}
+thisdict.clear()
+print(thisdict)
