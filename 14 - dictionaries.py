@@ -52,3 +52,20 @@ thisdict = {
 }
 if "model" in thisdict:
     print("Yes, 'model' is one of the keys in the thisdict dictionary")
+
+
+# Change Dictionary item
+thisdict = {
+    "brand": "Ford",
+    "model": "Mustang",
+    "year": 1964
+}
+thisdict["year"] = 2018
+
+# using the update() method
+thisdict = {
+    "brand": "Ford",
+    "model": "Mustang",
+    "year": 1964
+}
+thisdict.update({"year": 2020})
