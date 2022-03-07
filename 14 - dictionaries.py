@@ -22,3 +22,33 @@ thisdict = {
     "year": 1964,
     "colors": ["red", "white", "blue"]
 }
+
+# Access Dictionary Items
+"""You can access the items of a dictionary by referring to its key name, inside square brackets:"""
+thisdict = {
+    "brand": "Ford",
+    "model": "Mustang",
+    "year": 1964
+}
+x = thisdict["model"]
+
+# the get() method will give the same result too
+x = thisdict.get("model")
+
+# the keys() method will return a list of all the keys in the dictionary
+x = thisdict.keys()
+
+# the values() method will return all the values in the dictionary
+x = thisdict.values()
+
+# the items() method will return ach items in a dictionary, as tuples in a list
+x = thisdict.items()
+
+# Checking if key exist
+thisdict = {
+    "brand": "Ford",
+    "model": "Mustang",
+    "year": 1964
+}
+if "model" in thisdict:
+    print("Yes, 'model' is one of the keys in the thisdict dictionary")
