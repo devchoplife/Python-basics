@@ -6,6 +6,9 @@
 and can only be used inside that function."""
 
 
+
+
+import platform
 def myfunc():
     x = 300
     print(x)
@@ -67,4 +70,11 @@ def myfunc():
 
 myfunc()
 
+print(x)
+
+# Modules
+# Using the dir() function
+"""There is a built-in function to list all the function names (or variable names) in a module. The dir() function:"""
+
+x = dir(platform)
 print(x)
